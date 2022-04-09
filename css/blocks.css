@@ -1,3 +1,13 @@
-nav {
+header {
+    aspect-ratio: 1 / 1;
     color: var(--white);
+    padding: 2rem 1rem;
+    background-image: url('../images/mobile-image-hero-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
