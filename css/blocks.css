@@ -1,7 +1,7 @@
 header {
     aspect-ratio: 1 / 1;
     color: var(--white);
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
     background-image: url('../images/mobile-image-hero-1.jpg');
     background-position: center;
     background-size: cover;
@@ -11,3 +11,34 @@ header {
         display: flex;
         justify-content: center;
     }
+
+section {
+    padding: 5rem 2rem;
+}
+    section h2 {
+        font-size: 1.9rem;
+    }
+    section p {
+        font-size: .8rem;
+        line-height: 1.75;
+    }
+    section a {
+        margin-top: 4rem;
+        font-size: .9rem;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--black);
+        
+        display: inline-block;
+    }
+        a img {
+            margin-left: 3rem;
+        }
+
+img.section-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1.5 / 1;
+}

@@ -47,6 +47,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+- Mobile view first | roughly done | to do nav
+
 ### Built with
 
 - Semantic HTML5 markup
