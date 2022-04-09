@@ -7,7 +7,7 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px -->
 
-## Colors
+<!-- ## Colors -->
 
 <!-- ### Primary
 
@@ -16,7 +16,7 @@ The designs were created to the following widths:
 - White: hsl(0, 0%, 100%)
 - Very Dark Gray: hsl(0, 0%, 27%) -->
 
-## Typography
+<!-- ## Typography -->
 
 <!-- ### Body Copy
 
