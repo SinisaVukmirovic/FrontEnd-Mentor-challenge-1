@@ -1,0 +1,12 @@
+/* media queries */
+@media (min-width: 1440px) {
+    html {
+        font-size: var(--desktop-font-size);
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: var(--mobile-font-size);
+    }
+}
