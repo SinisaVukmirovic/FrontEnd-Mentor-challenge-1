@@ -48,6 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## My process
 
 - Mobile view first | roughly done | to do nav
+- working on setting up section with sliders
 
 ### Built with
 
@@ -92,13 +93,15 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [B__E--M Methodology](https://sinisavukmirovic.github.io/B__E--M/) 
+- [Slider tutorial](https://www.youtube.com/watch?v=9HcxHDS2w1s)
+- [Inset shorhand property](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://github.com/SinisaVukmirovic)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Sinisa Vukmirovic](https://github.com/SinisaVukmirovic)
+- Frontend Mentor - [@SinisaVukmirovic](https://www.frontendmentor.io/profile/SinisaVukmirovic)
 - Twitter - [@sajtowski](https://twitter.com/sajtowski)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

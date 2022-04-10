@@ -42,3 +42,16 @@ img.section-img {
     object-fit: cover;
     aspect-ratio: 1.5 / 1;
 }
+
+section[data-slides] {
+    position: relative;
+}
+    .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
+        .slide[data-active] {
+            position: unset;
+            opacity: 1;
+        }
