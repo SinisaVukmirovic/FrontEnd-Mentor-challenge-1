@@ -49,6 +49,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Mobile view first | roughly done | to do nav
 - working on setting up section with sliders
+- desktop view finished
 
 ### Built with
 
@@ -57,7 +58,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- B__E--M Methodology
 
 ### What I learned
 
@@ -92,7 +92,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [B__E--M Methodology](https://sinisavukmirovic.github.io/B__E--M/) 
 - [Slider tutorial](https://www.youtube.com/watch?v=9HcxHDS2w1s)
 - [Inset shorhand property](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)
 
