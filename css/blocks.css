@@ -23,26 +23,68 @@ header {
             cursor: pointer;
             border: none;
             background-color: transparent;
+
+            display: flex;
+            flex-direction: column;
+            outline: 2px solid lime;
         }
         .menu-btn div {
             width: 2rem;
             height: 3px;
             background-color: var(--white);
             position: relative;
+            background-color: red;
+            /* z-index: 3; */
+            margin: .25rem 0;
+            transform-origin: left;
+
         }
-            .menu-btn div::before,
+            /* .menu-btn.open div {
+                background-color: var(--very-dark-gray);
+            }
+                .menu-btn.open div:nth-of-type(1) {
+                    transform: rotate(-45deg);
+                }
+                .menu-btn.open div:nth-of-type(2) {
+                    transform: scale(0);
+                    background-color: lime;
+                }
+                .menu-btn.open div:nth-of-type(3) {
+                    transform: rotate(45deg);
+                } */
+            /* .menu-btn div::before,
             .menu-btn div::after {
-                content: '';
+            background-color: red;
+            z-index: 3; */
+
+                /* content: '';
                 position: absolute;
                 width: 2rem;
                 height: 3px;
-                background-color: var(--white);
-            }
-                .menu-btn div::before { bottom: .5rem; left: 0; }
-                .menu-btn div::after { top: .5rem; left: 0; }
+                background-color: var(--white); */
+            /* } */
+                /* .menu-btn div::before { bottom: .5rem; left: 0; }
+                .menu-btn div::after { top: .5rem; left: 0; } */
         nav h1 {
             margin: 0 auto;
         }
+        nav .nav-links {
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            width: 100vw;
+            list-style-type: none;
+            background-color: var(--white);
+            padding: 3rem 0;
+        }
+            .nav-links li {
+                padding: 0 1rem;
+            }
+            .nav-links a {
+                text-decoration: none;
+                color: var(--very-dark-gray);
+            }
+
     .controls {
         position: absolute;
         bottom: 0;
@@ -63,8 +105,12 @@ header {
             border: none;
             background-color: var(--black);
         }
-            .controls button:focus, 
+            /* .controls button:focus, 
             .controls button:hover {
+                background-color: var(--very-dark-gray);
+                outline: none;
+            } */
+            .controls button:is(:focus, :hover) {
                 background-color: var(--very-dark-gray);
                 outline: none;
             }
