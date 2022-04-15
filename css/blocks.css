@@ -1,5 +1,6 @@
 header {
     aspect-ratio: 1 / 1;
+    text-align: center;
     color: var(--white);
     padding: 3rem 2rem;
     background-image: url('../images/mobile-image-hero-1.jpg');
@@ -10,14 +11,24 @@ header {
     position: relative;
 }
     nav {
+        /* outline: 1px solid red; */
+        /* background-color: red; */
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        position: relative;
+        padding: 3rem 2rem;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 200ms linear;
     }
+        nav.open {
+            background-color: var(--white);
+        }
         button.menu-btn {
-            position: absolute;
-            left: 0;
+            /* position: absolute; */
+            /* left: 2rem; */
             cursor: pointer;
             border: none;
             background-color: transparent;
@@ -61,19 +72,23 @@ header {
             /* } */
                 /* .menu-btn div::before { bottom: .5rem; left: 0; }
                 .menu-btn div::after { top: .5rem; left: 0; } */
-        nav h1 {
+        /* nav h1 {
             margin: 0 auto;
-        }
+        } */
         nav .nav-links {
-            position: absolute;
+            /* position: absolute; */
             display: flex;
             justify-content: flex-end;
-            width: 100vw;
+            /* width: 100vw; */
             list-style-type: none;
-            background-color: var(--white);
-            padding: 3rem 0;
-            transform: translateY(-120%);
-            transition: transform 500ms ease-in-out;
+            /* background-color: var(--white); */
+            /* padding: 3rem 1rem; */
+            /* transform: translateY(-100%); */
+            transform-origin: left;
+            transform: scale(0, 1);
+            opacity: 0;
+            transition: transform 200ms ease-in-out;
+
             animation-fill-mode: backwards;
             /* opacity: 0; */
         }
@@ -82,10 +97,14 @@ header {
             }
             .nav-links a {
                 text-decoration: none;
-                color: var(--very-dark-gray);
+                color: var(--black);
+                font-size: .8rem;
             }
             .nav-links.open {
-                transform: translateY(0);
+                transform: scale(1, 1);
+            opacity: 1;
+
+                /* background-color: var(--white); */
                 /* opacity: 1; */
             }
 

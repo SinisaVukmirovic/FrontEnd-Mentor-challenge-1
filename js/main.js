@@ -6,7 +6,9 @@ window.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('open');
 
+        const nav = header.querySelector('nav');
         const navLinks = header.querySelector('.nav-links');
+        nav.classList.toggle('open');
         navLinks.classList.toggle('open');
     });
     

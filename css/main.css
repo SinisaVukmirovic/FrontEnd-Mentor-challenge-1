@@ -35,6 +35,10 @@ body {
     color: var(--dark-gray);
 }
 
+h1 {
+    font-weight: var(--light);
+}
+
 h2,
 h3,
 h4 {
