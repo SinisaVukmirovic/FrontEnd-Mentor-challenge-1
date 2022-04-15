@@ -11,16 +11,17 @@ header {
     position: relative;
 }
     nav {
-        /* outline: 1px solid red; */
+        outline: 1px solid red;
         /* background-color: red; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3rem 2rem;
-        width: 100vw;
+        /* width: 100vw; */
         position: absolute;
         top: 0;
         left: 0;
+        right: 0;
         transition: background-color 200ms linear;
     }
         nav.open {
