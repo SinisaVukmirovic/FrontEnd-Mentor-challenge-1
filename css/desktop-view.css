@@ -1,5 +1,5 @@
-/* @media (min-width: 1440px) { */
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
+/* @media (min-width: 1140px) { */
     html {
         font-size: var(--desktop-font-size);
     }
@@ -111,7 +111,11 @@
         }
         section a {
             margin-top: 2rem;
+            transition: color 200ms linear;
         }
+            section a:hover {
+                color: var(--dark-gray);
+            }
     
     img:nth-of-type(1) {
         grid-column: 1 / 2;

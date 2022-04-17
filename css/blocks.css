@@ -180,10 +180,12 @@ section[data-slides] {
 }
     .slide {
         position: absolute;
+        display: none;
         inset: 0;
         opacity: 0;
     }
         .slide[data-active] {
+            display: block;
             position: unset;
             opacity: 1;
         }
