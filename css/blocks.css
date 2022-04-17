@@ -11,7 +11,7 @@ header {
     position: relative;
 }
     nav {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         /* background-color: red; */
         display: flex;
         justify-content: space-between;

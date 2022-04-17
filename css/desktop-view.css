@@ -34,20 +34,9 @@
         /* position: relative; */
     }
         nav {
-            /* display: flex; */
-            /* justify-content: flex-end; */
-            /* align-items: center; */
-            /* padding: 1rem; */
-            /* position: absolute; */
-        }
-        nav {
-            outline: 1px solid red;
-
             /* background-color: red; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 3rem 2rem;
+            justify-content: flex-start;
+            margin-left: 10rem;
             /* width: 100vw; */
             /* width: unset;
 
@@ -80,6 +69,9 @@
                 animation-fill-mode: backwards;
                 /* opacity: 0; */
             }
+                .nav-links a {
+                    color: var(--white);
+                }
 
         .controls {
             transform: translateX(100%);
