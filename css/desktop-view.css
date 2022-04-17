@@ -71,7 +71,18 @@
             }
                 .nav-links a {
                     color: var(--white);
+                    position: relative;
                 }
+                    .nav-links a:hover::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.75rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 1rem;
+                        height: 3px;
+                        background-color: var(--white);
+                    }
 
         .controls {
             transform: translateX(100%);
