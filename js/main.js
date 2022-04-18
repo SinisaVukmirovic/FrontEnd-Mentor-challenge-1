@@ -1,25 +1,35 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header');
 
-    const menuBtn = header.querySelector('.menu-btn');
+    const menuBtn = document.querySelector('.menu-btn');
 
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('open');
 
-        const nav = header.querySelector('nav');
-        const navLinks = header.querySelector('.nav-links');
+        const nav = document.querySelector('nav');
         nav.classList.toggle('open');
-        navLinks.classList.toggle('open');
     });
     
-    const controlBtns = header.querySelectorAll('.controls button');
-    
+    const controlBtns = document.querySelectorAll('.controls button');
+    // const textSlides = document.querySelector('[data-slides]');
+
     controlBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // const offset = btn.dataset.control === 'next' ? 1 : -1;
-            const textSlides = btn.parentElement.parentElement.nextElementSibling
+            const step = btn.dataset.control === 'left' ? -1 : 1;
+            // console.log(step)
+            const textSlides = document.querySelector('[data-slides]');
+
+            const active = textSlides.querySelector('[data-active]');
+            console.log([...textSlides.children].indexOf(active))
+
+            let newIndex = [...textSlides.children].indexOf(active) + step;
+            console.log(newIndex)
             
-            console.log([...textSlides.querySelectorAll('.slide')]);
+            if (newIndex < 0) newIndex = textSlides.children.length - 1;
+            if (newIndex >= textSlides.children.length) newIndex = 0;
+
+            textSlides.children[newIndex].dataset.active = true;
+            delete active.dataset.active;
+            
         });
     });
 

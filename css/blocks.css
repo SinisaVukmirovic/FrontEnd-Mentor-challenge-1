@@ -101,13 +101,17 @@ header {
                 color: var(--black);
                 font-size: .8rem;
             }
-            .nav-links.open {
+            nav.open .nav-links {
                 transform: scale(1, 1);
-            opacity: 1;
+                opacity: 1;
+            }
+            /* .nav-links.open {
+                transform: scale(1, 1);
+                opacity: 1; */
 
                 /* background-color: var(--white); */
                 /* opacity: 1; */
-            }
+            /* } */
 
     .controls {
         position: absolute;

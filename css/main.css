@@ -52,3 +52,21 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+/* Custom scroll bars style */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    background: var(--dark-gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--very-dark-gray);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--black); 
+}
