@@ -163,6 +163,7 @@ section {
         text-transform: uppercase;
         text-decoration: none;
         color: var(--black);
+        outline-offset: .25rem;
         
         display: inline-block;
     }
@@ -184,12 +185,14 @@ section[data-slides] {
 }
     .slide {
         position: absolute;
-        display: none;
+        /* display: none; */
+        visibility: hidden;
         inset: 0;
         opacity: 0;
+        transition: opacity 300ms linear;
     }
-        .slide[data-active] {
-            display: block;
+    .slide[data-active] {
+            visibility: visible;
             position: unset;
             opacity: 1;
         }
