@@ -3,7 +3,7 @@ header {
     text-align: center;
     color: var(--white);
     padding: 3rem 2rem;
-    background-image: url('../images/mobile-image-hero-1.jpg');
+    /* background-image: url('../images/mobile-image-hero-1.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
