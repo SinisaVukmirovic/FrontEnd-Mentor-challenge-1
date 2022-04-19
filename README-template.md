@@ -50,6 +50,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile view first | roughly done | to do nav
 - working on setting up section with sliders
 - desktop view finished
+- Slider controls
+- Navbar, with hover detail for links
+- Slider for text slides
+- Slider for background images slides with mobile and desktop images
+- detection on viewport width
 
 ### Built with
 
@@ -58,11 +63,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JS for sliders functionality
 
 ### What I learned
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
-- Media Queries for responsivnes
+- Media Queries for responsiveness
+- CSS Grid
 
 To see how you can add code snippets, see below:
 
@@ -94,6 +101,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Slider tutorial](https://www.youtube.com/watch?v=9HcxHDS2w1s)
 - [Inset shorhand property](https://developer.mozilla.org/en-US/docs/Web/CSS/inset)
+- [Detecting device width with JS](https://stackoverflow.com/questions/1248081/how-to-get-the-browser-viewport-dimensions)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

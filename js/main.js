@@ -49,25 +49,4 @@ window.addEventListener('DOMContentLoaded', () => {
             delete active.dataset.active;            
         });
     });
-
-    if (window.innerWidth > 1000) {
-
-        console.log('DESKTOP');
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
