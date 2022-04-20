@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     const controlBtns = document.querySelectorAll('.controls button');
-    // const textSlides = document.querySelector('[data-slides]');
     const textSlides = document.querySelector('[data-slides]');
     const imgSlides = {
         mobile: [
