@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     header.style.backgroundImage = imgSlides.mobile[0];
 
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 1400) {
         header.style.backgroundImage = imgSlides.desktop[0];
     }
 

@@ -1,5 +1,4 @@
-/* @media (min-width: 1440px) { */
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
     html {
         font-size: var(--desktop-font-size);
     }
