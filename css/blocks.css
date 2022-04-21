@@ -11,87 +11,61 @@ header {
     position: relative;
 }
     nav {
-        /* outline: 1px solid red; */
-        /* background-color: red; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3rem 2rem;
-        /* width: 100vw; */
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         transition: background-color 200ms linear;
     }
-        nav.open {
-            background-color: var(--white);
-        }
-        button.menu-btn {
-            /* position: absolute; */
-            /* left: 2rem; */
-            cursor: pointer;
-            border: none;
-            background-color: transparent;
+    nav.open {
+        background-color: var(--white);
+    }
 
-            display: flex;
-            flex-direction: column;
-        }
+    button.menu-btn {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: column;
+    }
         .menu-btn div {
             width: 2rem;
             height: 3px;
             background-color: var(--white);
-            /* z-index: 3; */
             margin: .25rem 0;
             transform-origin: left;
             transition: transform 300ms ease-in-out;
 
         }
-            .menu-btn.open div {
-                background-color: var(--very-dark-gray);
-            }
-                .menu-btn.open div:nth-of-type(1) {
-                    transform: rotate(45deg);
-                }
-                .menu-btn.open div:nth-of-type(2) {
-                    transform: scale(0);
-                    background-color: lime;
-                }
-                .menu-btn.open div:nth-of-type(3) {
-                    transform: rotate(-45deg);
-                }
-            /* .menu-btn div::before,
-            .menu-btn div::after {
-            background-color: red;
-            z-index: 3; */
+        .menu-btn.open div {
+            background-color: var(--very-dark-gray);
+        }
+        .menu-btn.open div:nth-of-type(1) {
+            transform: rotate(45deg);
+        }
+        .menu-btn.open div:nth-of-type(2) {
+            transform: scale(0);
+            background-color: lime;
+        }
+        .menu-btn.open div:nth-of-type(3) {
+            transform: rotate(-45deg);
+        }
 
-                /* content: '';
-                position: absolute;
-                width: 2rem;
-                height: 3px;
-                background-color: var(--white); */
-            /* } */
-                /* .menu-btn div::before { bottom: .5rem; left: 0; }
-                .menu-btn div::after { top: .5rem; left: 0; } */
-        /* nav h1 {
-            margin: 0 auto;
-        } */
         nav .nav-links {
-            /* position: absolute; */
             display: flex;
             justify-content: flex-end;
-            /* width: 100vw; */
             list-style-type: none;
-            /* background-color: var(--white); */
-            /* padding: 3rem 1rem; */
-            /* transform: translateY(-100%); */
             transform-origin: left;
             transform: scale(0, 1);
             opacity: 0;
             transition: transform 200ms ease-in-out;
 
             animation-fill-mode: backwards;
-            /* opacity: 0; */
         }
             .nav-links li {
                 padding: 0 1rem;
@@ -101,17 +75,10 @@ header {
                 color: var(--black);
                 font-size: .8rem;
             }
-            nav.open .nav-links {
-                transform: scale(1, 1);
-                opacity: 1;
-            }
-            /* .nav-links.open {
-                transform: scale(1, 1);
-                opacity: 1; */
-
-                /* background-color: var(--white); */
-                /* opacity: 1; */
-            /* } */
+        nav.open .nav-links {
+            transform: scale(1, 1);
+            opacity: 1;
+        }
 
     .controls {
         position: absolute;
@@ -133,19 +100,10 @@ header {
             border: none;
             background-color: var(--black);
         }
-            /* .controls button:focus, 
-            .controls button:hover {
-                background-color: var(--very-dark-gray);
-                outline: none;
-            } */
-            /* .controls button:is(:focus, :hover) {
-                background-color: var(--very-dark-gray);
-                outline: none;
-            } */
-            .controls button:is(:hover, :focus-visible) {
-                background-color: var(--very-dark-gray);
-                outline: none;
-            }
+        .controls button:is(:hover, :focus-visible) {
+            background-color: var(--very-dark-gray);
+            outline: none;
+        }
         .controls img {
             height: 33%;
         }
@@ -189,14 +147,13 @@ section[data-slides] {
 }
     .slide {
         position: absolute;
-        /* display: none; */
         visibility: hidden;
         inset: 0;
         opacity: 0;
         transition: opacity 300ms linear;
     }
     .slide[data-active] {
-            visibility: visible;
-            position: unset;
-            opacity: 1;
-        }
+        visibility: visible;
+        position: unset;
+        opacity: 1;
+    }
