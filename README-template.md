@@ -71,6 +71,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Media Queries for responsiveness
 - CSS Grid
 - Manipulating slides with JS
+- using different size images for mobile and desktop
 
 To see how you can add code snippets, see below:
 
