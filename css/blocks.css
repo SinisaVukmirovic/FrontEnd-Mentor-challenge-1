@@ -75,6 +75,7 @@ header {
                 color: var(--black);
                 font-size: .8rem;
             }
+            
         nav.open .nav-links {
             transform: scale(1, 1);
             opacity: 1;

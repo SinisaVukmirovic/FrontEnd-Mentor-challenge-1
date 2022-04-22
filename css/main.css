@@ -59,13 +59,11 @@ h3 {
     width: 4px;
     background: var(--dark-gray);
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--very-dark-gray);
 
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--black); 
