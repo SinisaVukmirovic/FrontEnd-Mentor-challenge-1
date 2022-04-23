@@ -23,7 +23,7 @@
             margin-left: 10rem;
             transition: background-color 200ms linear;
         }
-            button.menu-btn {
+            .menu-btn {
                 display: none;
             }
 
